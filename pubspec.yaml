@@ -9,7 +9,7 @@ environment:
 dependencies:
   bloc: ^8.1.2
   cached_network_image: ^3.2.3
-  connectivity_plus: ^4.0.2
+  connectivity_plus: ^5.0.2
   cupertino_icons: ^1.0.6
   curl_logger_dio_interceptor: ^1.0.0
   dartz: ^0.10.1
