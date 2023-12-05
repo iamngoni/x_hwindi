@@ -17,7 +17,7 @@ class HwindiButton extends StatelessWidget {
     this.onTap,
     this.color = HwindiColors.white,
     this.backgroundColor = HwindiColors.yellow,
-    this.borderRadius = 20,
+    this.borderRadius = 12,
     this.verticalPadding = 8,
     this.fontFamily,
     this.fontSize = 10,

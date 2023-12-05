@@ -11,16 +11,80 @@ import 'package:flutter/widgets.dart';
 
 class $AssetsIconsGen {
   const $AssetsIconsGen();
+
+  /// File path: assets/icons/account.png
+  AssetGenImage get account => const AssetGenImage('assets/icons/account.png');
+
+  /// File path: assets/icons/bookmark.png
+  AssetGenImage get bookmark =>
+      const AssetGenImage('assets/icons/bookmark.png');
+
+  /// File path: assets/icons/destination.png
+  AssetGenImage get destination =>
+      const AssetGenImage('assets/icons/destination.png');
+
+  /// File path: assets/icons/distance.png
+  AssetGenImage get distance =>
+      const AssetGenImage('assets/icons/distance.png');
+
+  /// File path: assets/icons/home.png
+  AssetGenImage get home => const AssetGenImage('assets/icons/home.png');
+
+  /// File path: assets/icons/location.png
+  AssetGenImage get location =>
+      const AssetGenImage('assets/icons/location.png');
+
+  /// File path: assets/icons/menu.png
+  AssetGenImage get menu => const AssetGenImage('assets/icons/menu.png');
+
+  /// File path: assets/icons/messages.png
+  AssetGenImage get messages =>
+      const AssetGenImage('assets/icons/messages.png');
+
+  /// File path: assets/icons/search.png
+  AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
+
+  /// File path: assets/icons/settings.png
+  AssetGenImage get settings =>
+      const AssetGenImage('assets/icons/settings.png');
+
+  /// File path: assets/icons/trips.png
+  AssetGenImage get trips => const AssetGenImage('assets/icons/trips.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        account,
+        bookmark,
+        destination,
+        distance,
+        home,
+        location,
+        menu,
+        messages,
+        search,
+        settings,
+        trips
+      ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/car-white.png
+  AssetGenImage get carWhite =>
+      const AssetGenImage('assets/images/car-white.png');
+
+  /// File path: assets/images/car.jpg
+  AssetGenImage get car => const AssetGenImage('assets/images/car.jpg');
+
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
 
+  /// File path: assets/images/me.png
+  AssetGenImage get me => const AssetGenImage('assets/images/me.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [logo];
+  List<AssetGenImage> get values => [carWhite, car, logo, me];
 }
 
 class $AssetsLottieGen {

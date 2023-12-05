@@ -24,6 +24,7 @@ class DeviceOfflinePage extends StatelessWidget {
     return RelativeBuilder(
       builder: (context, height, width, sy, sx) {
         return Scaffold(
+          backgroundColor: HwindiColors.yellow,
           body: SafeArea(
             child: Container(
               height: height,
@@ -42,7 +43,7 @@ class DeviceOfflinePage extends StatelessWidget {
                   Text(
                     'Device Offline',
                     style: TextStyle(
-                      color: HwindiColors.yellow,
+                      color: HwindiColors.white,
                       fontWeight: FontWeight.w600,
                       fontSize: sy(12),
                     ),
@@ -54,7 +55,7 @@ class DeviceOfflinePage extends StatelessWidget {
                     'Your device is currently offline and not connected to the '
                     'internet. Please check your connection.',
                     style: TextStyle(
-                      color: HwindiColors.yellow,
+                      color: HwindiColors.white,
                       fontWeight: FontWeight.w400,
                       fontSize: sy(10),
                     ),
@@ -65,6 +66,8 @@ class DeviceOfflinePage extends StatelessWidget {
                   ),
                   HwindiButton(
                     text: 'All Better Now?',
+                    backgroundColor: HwindiColors.white,
+                    color: HwindiColors.yellow,
                     onTap: () {
                       context
                           .read<ConnectivityStatusBloc>()
