@@ -1,6 +1,6 @@
-import 'package:x_hwindi/app/app.dart';
-import 'package:x_hwindi/bootstrap.dart';
+import 'bootstrap.dart';
+import 'hwindi.dart';
 
 void main() {
-  bootstrap(() => const App());
+  bootstrap(() => const HwindiApp());
 }

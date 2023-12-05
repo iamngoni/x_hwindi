@@ -1,9 +1,9 @@
 //
-//  merlin_guest
+//  x_hwindi
 //  notifications
 //
-//  Created by Ngonidzashe Mangudya on 08/11/2023.
-//  Copyright (c) 2023 QuickMerlin
+//  Created by Ngonidzashe Mangudya on 05/12/2023.
+//  Copyright (c) 2023 ModestNerds, Co
 //
 
 import 'dart:developer';

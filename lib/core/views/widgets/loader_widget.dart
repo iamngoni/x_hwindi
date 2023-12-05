@@ -3,7 +3,7 @@
 //  merlin_guest
 //
 //  Created by Ngonidzashe Mangudya on 25/7/2023.
-//  Copyright (c) 2023 QuickMerlin
+//  Copyright (c) 2023 ModestNerds, Co
 //
 
 import 'dart:io';
@@ -16,7 +16,7 @@ import '../../configs/colors.dart';
 
 class LoaderWidget extends StatelessWidget {
   const LoaderWidget({
-    this.color = MerlinColors.winterBlue,
+    this.color = HwindiColors.yellow,
     super.key,
   });
 

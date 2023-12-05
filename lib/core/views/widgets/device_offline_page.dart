@@ -1,9 +1,9 @@
 //
+//  x_hwindi
 //  device_offline_page
-//  merlin_guest
 //
-//  Created by Ngonidzashe Mangudya on 25/7/2023.
-//  Copyright (c) 2023 QuickMerlin
+//  Created by Ngonidzashe Mangudya on 05/12/2023.
+//  Copyright (c) 2023 ModestNerds, Co
 //
 
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ import 'package:relative_scale/relative_scale.dart';
 import '../../../gen/assets.gen.dart';
 import '../../configs/colors.dart';
 import '../../state/connectivity_status/connectivity_status_bloc.dart';
-import 'merlin_button.dart';
+import 'hwindi_button.dart';
 
 class DeviceOfflinePage extends StatelessWidget {
   const DeviceOfflinePage({super.key});
@@ -42,7 +42,7 @@ class DeviceOfflinePage extends StatelessWidget {
                   Text(
                     'Device Offline',
                     style: TextStyle(
-                      color: MerlinColors.winterBlue,
+                      color: HwindiColors.yellow,
                       fontWeight: FontWeight.w600,
                       fontSize: sy(12),
                     ),
@@ -54,7 +54,7 @@ class DeviceOfflinePage extends StatelessWidget {
                     'Your device is currently offline and not connected to the '
                     'internet. Please check your connection.',
                     style: TextStyle(
-                      color: MerlinColors.winterBlue,
+                      color: HwindiColors.yellow,
                       fontWeight: FontWeight.w400,
                       fontSize: sy(10),
                     ),
@@ -63,7 +63,7 @@ class DeviceOfflinePage extends StatelessWidget {
                   SizedBox(
                     height: sy(20),
                   ),
-                  MerlinButton(
+                  HwindiButton(
                     text: 'All Better Now?',
                     onTap: () {
                       context

@@ -1,8 +1,8 @@
 //
-//  merlin_guest
+//  x_hwindi
 //  modal
 //
-//  Created by Ngonidzashe Mangudya on 04/12/2023.
+//  Created by Ngonidzashe Mangudya on 05/12/2023.
 //  Copyright (c) 2023 ModestNerds, Co
 //
 
@@ -45,7 +45,7 @@ Future<void> _showMaterialModal(
 }) async {
   return showMaterialModalBottomSheet(
     context: context,
-    barrierColor: MerlinColors.lightGrey.withOpacity(0.9),
+    barrierColor: HwindiColors.yellow.withOpacity(0.2),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(
         top: Radius.circular(20),
@@ -65,7 +65,7 @@ Future<void> _showCupertinoModal(
   return showCupertinoModalBottomSheet(
     context: context,
     topRadius: const Radius.circular(20),
-    barrierColor: MerlinColors.lightGrey.withOpacity(0.9),
+    barrierColor: HwindiColors.yellow.withOpacity(0.2),
     builder: (context) {
       return Material(
         child: _buildSizedBox(

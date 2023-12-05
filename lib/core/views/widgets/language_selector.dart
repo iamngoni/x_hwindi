@@ -1,9 +1,9 @@
 //
-//  merlin_guest
+//  x_hwindi
 //  language_selector
 //
-//  Created by Ngonidzashe Mangudya on 23/10/2023.
-//  Copyright (c) 2023 QuickMerlin
+//  Created by Ngonidzashe Mangudya on 05/12/2023.
+//  Copyright (c) 2023 ModestNerds, Co
 //
 
 import 'package:flutter/material.dart';
@@ -17,9 +17,9 @@ import '../../state/locale/locale_bloc.dart';
 
 class LanguageSelector extends StatefulWidget {
   const LanguageSelector({
-    this.iconColor = MerlinColors.winterBlue,
-    this.textColor = MerlinColors.winterBlue,
-    this.backgroundColor = MerlinColors.white,
+    this.iconColor = HwindiColors.yellow,
+    this.textColor = HwindiColors.yellow,
+    this.backgroundColor = HwindiColors.yellow,
     this.isOnAppBar = false,
     super.key,
   });
@@ -75,7 +75,7 @@ class _LanguageSelectorState extends State<LanguageSelector> {
                             if (l == state)
                               Icon(
                                 Icons.check,
-                                color: MerlinColors.winterBlue,
+                                color: HwindiColors.yellow,
                                 size: sy(10),
                               ),
                           ],
