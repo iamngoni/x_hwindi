@@ -11,6 +11,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/state/connectivity_status/connectivity_status_bloc.dart';
 import 'core/state/locale/locale_bloc.dart';
 import 'core/state/navigation/navigation_bloc.dart';
+import 'hwindi/state/hwindi/hwindi_bloc.dart';
 import 'injection.dart';
 
 List<BlocProvider> providers = [
@@ -23,5 +24,8 @@ List<BlocProvider> providers = [
   ),
   BlocProvider<NavigationBloc>(
     create: (_) => getIt<NavigationBloc>(),
+  ),
+  BlocProvider<HwindiBloc>(
+    create: (_) => getIt<HwindiBloc>(),
   ),
 ];

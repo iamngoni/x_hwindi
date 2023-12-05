@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 class HwindiColors {
   const HwindiColors._();
   static const Color white = Color(0xFFFFFFFF);
+  static const Color fadedWhite = Color(0xFFF7F8F9);
   static const Color black = Color(0xFF000000);
   static const Color yellow = Color(0xFFF8C33E);
   static const Color border = Color(0xFFE8ECF4);
