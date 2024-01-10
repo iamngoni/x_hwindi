@@ -31,7 +31,7 @@ dependencies:
       url: https://github.com/iamngoni/google_geocoding.git
   google_maps_flutter: ^2.5.0
   handy_extensions: ^0.1.6
-  image_picker: ^1.0.4
+  image_picker: ^1.0.7
   injectable: ^2.3.2
   intl: ^0.18.0
   json_annotation: ^4.8.1
