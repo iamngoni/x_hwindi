@@ -10,7 +10,7 @@ import 'dart:developer';
 
 import 'package:dartz/dartz.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
-import 'package:google_geocoding/google_geocoding.dart';
+import 'package:google_geocoding_api/google_geocoding_api.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../core/models/data/application_error.dart';
@@ -24,26 +24,21 @@ class NativeLocationsRepository implements LocationsRepository {
     String query,
   ) async {
     try {
-      final GoogleGeocoding googleGeocoding =
-          GoogleGeocoding('AIzaSyDBaLlhpFc6o7G9Y-4CE6eoNpyHFK_reGU');
-      final GeocodingResponse? response = await googleGeocoding.geocoding.get(
-        query,
-        [],
-      );
+      const String apiKey = 'AIzaSyDBaLlhpFc6o7G9Y-4CE6eoNpyHFK_reGU';
+      final api = GoogleGeocodingApi(apiKey);
+      final response = await api.search(query);
 
       final List<HwindiLocation> hwindiLocations = [];
 
-      if (response != null) {
-        response.results?.forEach((GeocodingResult result) {
-          log(result.formattedAddress ?? '');
-          hwindiLocations.add(
-            HwindiLocation(
-              name: result.formattedAddress ?? '',
-              latitude: result.geometry?.location?.lat ?? 0.0,
-              longitude: result.geometry?.location?.lng ?? 0.0,
-            ),
-          );
-        });
+      for (final result in response.results) {
+        log(result.formattedAddress);
+        hwindiLocations.add(
+          HwindiLocation(
+            name: result.formattedAddress,
+            latitude: result.geometry?.location.lat ?? 0.0,
+            longitude: result.geometry?.location.lng ?? 0.0,
+          ),
+        );
       }
 
       return Right(hwindiLocations);
